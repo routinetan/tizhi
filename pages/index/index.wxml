@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <div class="weui-cells__title">体脂计算器</div>
+      <view class="weui-cells">
+        <view class="weui-cell">
+            <view class="label" >性别</view>
+            <view>
+              <radio-group name="radio">
+                <label><radio value="radio1"/>男</label>
+                <label><radio value="radio2"/>女</label>
+              </radio-group>
+            </view>
+        </view>
+        <view class="weui-cell">
+            <view class="label" >年龄</view>
+            <input class="weui-input" auto-focus placeholder="请填入您的年龄"/>
+        </view>
+        <view class="weui-cell">
+            <view class="label" >身高</view>
+            <input class="weui-input" auto-focus placeholder="请填入您的身高"/>
+        </view>
+        <view class="weui-cell">
+            <view class="label" >体重</view>
+            <input class="weui-input" auto-focus placeholder="请填入您的体重"/>
+        </view>
+      </view>
+      <view>
+        <button class="weui-btn weui-btn_primary">计算</button>
+      </view>
+    </view>
+  </view>
+</view>
