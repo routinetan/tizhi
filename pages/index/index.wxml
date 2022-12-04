@@ -2,14 +2,12 @@
 <view class="container">
   <view class="page-body">
     <view class="page-section">
-      <div class="weui-cells__title">体脂计算器</div>
-      <view class="weui-cells">
         <view class="weui-cell">
             <view class="label" >性别</view>
             <view>
               <radio-group name="radio">
-                <label><radio value="radio1"/>男</label>
-                <label><radio value="radio2"/>女</label>
+                <label class="sex_option" ><radio value="radio1"/>男</label>
+                <label class="sex_option" ><radio value="radio2"/>女</label>
               </radio-group>
             </view>
         </view>
@@ -27,8 +25,7 @@
         </view>
       </view>
       <view>
-        <button class="weui-btn weui-btn_primary">计算</button>
+        <button class="weui-btn weui-btn_primary cacl">计算</button>
       </view>
-    </view>
   </view>
 </view>

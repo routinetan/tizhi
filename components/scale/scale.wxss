@@ -1,0 +1,97 @@
+/* components/heightAndWeight/index.wxss */
+.mydemo {
+    height: 255rpx;
+    position: relative;
+  }
+  
+  .myshow {
+    left: 0;
+    right: 0;
+    top: 5%;
+    font-size: 24rpx;
+    position: absolute;
+    text-align: center;
+  }
+  .mytext{
+    font-size: 44rpx;font-family: DIN-Bold, DIN;font-weight: bold;color: #4377E9 ;line-height: 54rpx;
+  }
+  /* components/heightAndWeight/index.wxss */
+  .swiperss {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: visible;
+    z-index: 10;
+    position: absolute;
+    /* border: 1px solid red; */
+  }
+  .mylineBox{
+    border: 1rpx solid #F5F7F9;
+    height: 3rpx;
+    border-radius: 0 0 100% 50%/100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #F5F7F9;
+    margin-bottom: -6rpx;
+    z-index: -1000;
+  }
+  .circle2{
+    bottom: -1.5rpx;
+  }
+  .swiperItems {
+    font-size: 24rpx;
+    position: relative;
+    margin-top: 74rpx;
+    border-bottom: 1px solid #F5F7F9;
+    height: 200rpx !important;
+    width: calc(570rpx / 19) !important;
+    overflow: visible;
+    /* border: 1px solid green; */
+  }
+  
+  .swiperItems>.lines {
+    background-color: #D2D6DF;
+    /* background-color: green; */
+    margin-bottom: 10rpx;
+    width: 2rpx;
+    height: 55rpx;
+    margin-left: 15rpx;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .linestwo {
+    margin: 0 auto;
+    width: 2rpx;
+    height: 90rpx;
+    background-color: #D2D6DF;
+    /* background-color: red; */
+    margin-left: 16rpx;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .lines+view {
+    font-size: 24rpx;
+    font-family: DIN-Regular, DIN;
+    font-weight: 400;
+    /* color: #D9D9D9; */
+    color: red;
+    line-height: 30rpx;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .line {
+    position: absolute;
+    left: 52.5%;/*关键控制数据*/
+    top: 64rpx;
+    /* transform: translateX(-50%); */
+    width: 6rpx;
+    height: 170rpx;
+    background: #43A3FF;
+    box-shadow: 0px 0px 2rpx 0px #43A3FF;
+    z-index: 600;
+    /* margin-right: 100rpx; */
+  }

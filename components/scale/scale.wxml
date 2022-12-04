@@ -1,0 +1,44 @@
+<view class="mydemo">
+  <view class="myshow">
+    <text style="color: #4377E9 " ><text class="mytext">{{currentNumber}}</text> {{ unit }}</text>
+    <text class="line"></text>
+  </view>
+ 
+  <swiper duration="10" class="swiperss" bindchange="getCurrent" display-multiple-items="{{multipleItems}}" easing-function = "linear" current="{{ current }}">
+    <swiper-item class="swiperItems" wx:for="{{multipleItems + offset * 2}}" wx:key="index">
+    <!-- <block wx:for="{{(multipleItems + offset * 2+1)/2}}" wx:key="index">
+      <view wx:if="{{arr[item]!=''}}"   class="{{arr[item]%5==0?'linestwo':'lines'}}"></view>
+    </block> -->
+   <block wx:if="{{arr[item]!=''}}">
+    <block wx:if="{{arr[item]%5==0}}">
+      <block wx:if="{{item<=((multipleItems + offset * 2)+1)/2}}">
+      <!-- //这里35是（multipleItems + offset * 2)计算得来的，所以更改样式，需要重新调整 -->
+        <view style='height: 100rpx; width: 2rpx; background-color: #EEC40A;margin-left: 16rpx;position: absolute;bottom: {{45-item}}rpx;'>  </view>
+        <!-- <text style="color: red;"> {{item}}</text> -->
+      </block>
+      <block wx:else>
+        <view style='height: 100rpx; width: 2rpx; background-color: #EEC40A;margin-left: 16rpx;position: absolute;bottom: {{item+5}}rpx;'>  </view>
+       <!-- <text style="color: gold;"> {{item}}</text> -->
+      </block>
+    </block>
+    <block wx:else>
+      <block wx:if="{{item<=((multipleItems + offset * 2)+1)/2}}">
+        <view style='background-color: #EEC40A;margin-bottom: 10rpx;width: 2rpx;height: 65rpx;margin-left: 15rpx;position: absolute ;bottom: {{35-item}}rpx;'>
+      </view>
+      <!-- {{item}} -->
+      </block>
+      <block wx:else>
+        <view style='background-color: #EEC40A;margin-bottom: 10rpx;width: 2rpx;height: 65rpx;margin-left: 15rpx;position: absolute ;bottom: {{item}}rpx;'>  </view>
+      </block>
+    </block>
+  </block>
+    <!-- <view style='background-color: #D2D6DF;margin-bottom: 10rpx;width: 2rpx;height: 55rpx;margin-left: 15rpx;position: absolute ;bottom: {{35-item}}rpx;'>
+    </view> -->
+      <!-- <view wx:if="{{arr[item]!=''}}"   class="{{arr[item]%5==0?'linestwo':'lines'}}"></view> -->
+      <view style="color: #BBBEC3;">{{arr[item]%5==0?arr[item]:''}}</view>
+    </swiper-item>
+
+  </swiper>
+  <!-- <view class="mylineBox circle2">
+  </view> -->
+</view>

@@ -1,0 +1,70 @@
+/*questions.wxss*/
+page{
+	background: #ffffff;
+}
+.mypage-demo{
+  margin: 20rpx 0;
+  padding: 15rpx;
+}
+.my-input-text{
+  margin: 50rpx 10rpx;
+  padding: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.my-label{
+  width: 150rpx;
+}
+.my-value{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.demo-value{
+  flex: 7;
+}
+.demo-unit{
+  flex:3;
+  color: red;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+.demo-tips{
+  margin: 40rpx;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 40rpx;
+}
+.demo-buy-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40rpx;
+  padding: 20rpx;
+  border: 2rpx solid #ECEDEE;
+  border-radius: 40rpx;
+}
+.buy-left{
+  flex:7;
+}
+.buy-num{
+   margin:10rpx 0;
+}
+.buy-value{
+  font-size: 36rpx;
+  font-weight: bold;
+}
+buy-time-num{
+  margin:10rpx 0;
+}
+.buy-right{
+  flex:3;
+}

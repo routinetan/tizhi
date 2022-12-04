@@ -1,0 +1,14 @@
+<view class="mypage-demo">
+  <view class="my-input-text">
+    <view class="my-label">
+      选择时长
+    </view>
+    <view class="my-value">
+      <input  class="demo-value" type="number" maxlength="10"  name='price' placeholder="输入时长分钟"  bindinput='getInputValue'/> <text class="demo-unit">分</text>
+    </view>
+  </view>
+    <view class="flex" style="flex-wrap:wrap;margin-top: 20rpx">
+      <!-- 如果调整页面padding 这里offset和multipleItems需要重新调整，否则会出现数值错位 -->
+      <scale offset="5" min="0" max="9999" unit="分" multipleItems="25" currentNumber="{{ ageCurrentNumber }}" bind:currentNumber="getCurrentNumberAge"></scale>
+    </view>
+</view>

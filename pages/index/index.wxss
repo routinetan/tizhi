@@ -2,3 +2,9 @@
 .label {
   width: 120rpx;
 }
+.sex_option {
+  margin: 0 20rpx;
+}
+.cacl {
+  margin-top: 50rpx;
+}
